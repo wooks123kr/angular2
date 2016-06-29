@@ -31,8 +31,6 @@ export class HeroDetailComponent implements OnInit{
       this.hero = new Hero();
     }
   }
-  hero: Hero;
-
   goBack(savedHero: Hero = null){
     this.close.emit(savedHero);
     if(this.navigated) { window.history.back();}

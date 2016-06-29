@@ -48,6 +48,7 @@ export class HeroService{
     let url = `${this.heroesUrl}/${hero.id}`;
     return this.http.delete(url, headers)
       .toPromise()
+      .then()
       .catch(this.handleError);
   }
 

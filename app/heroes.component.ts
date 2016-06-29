@@ -13,6 +13,8 @@ import {HeroDetailComponent} from './hero-detail.component';
 export class HeroesComponent implements OnInit{
   heroes: Hero[];
   selectedHero: Hero;
+  addingHero: boolean;
+  error: any;
   constructor(
     private router: Router,
     private heroService: HeroService){}
